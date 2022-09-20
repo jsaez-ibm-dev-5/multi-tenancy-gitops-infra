@@ -11,15 +11,12 @@ allowHostIPC: false
 allowHostNetwork: false
 allowHostPID: false
 allowHostPorts: false
-#privileged: false
+privileged: false
 allowPrivilegeEscalation: true
 allowPrivilegedContainer: false
 allowedCapabilities:
-- FOWNER
 - CHOWN
-- SETGID
-- SETUID
-- DAC_OVERRIDE
+
 defaultAddCapabilities: []
 defaultAllowPrivilegeEscalation: false
 forbiddenSysctls:
@@ -45,7 +42,7 @@ supplementalGroups:
 volumes:
 - configMap
 - downwardAPI
-- nfs
 - persistentVolumeClaim
 - projected
 - secret
+- nfs
