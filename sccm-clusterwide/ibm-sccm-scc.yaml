@@ -42,7 +42,7 @@ supplementalGroups:
 volumes:
 - configMap
 - downwardAPI
+- nfs
 - persistentVolumeClaim
 - projected
 - secret
-- nfs
